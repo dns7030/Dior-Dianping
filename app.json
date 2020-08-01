@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/detail",
+    "pages/profile/index",
+    "pages/products/products",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "sdkPlugin": {
+      "version": "3.9.0",
+      "provider": "wxc6b86e382a1e3294"
+    }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/products/products",
+        "text": "Products"
+      },
+
+      {
+        "pagePath": "pages/profile/index",
+        "text": "Me"
+      }
+    ]
+  }
+}

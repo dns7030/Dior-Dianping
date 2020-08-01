@@ -1,0 +1,7 @@
+<!--pages/order/order.wxml-->
+<view class="title-box">
+    <view class="name">{{products.name}} Price: {{products.price}} Kuai</view>
+</view>
+<view>
+  <button type="primary" bindtap="onPayClick">Pay</button>
+</view>

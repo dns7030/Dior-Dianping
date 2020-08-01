@@ -1,0 +1,9 @@
+<!--pages/products/products.wxml-->
+<view class="products">
+    <view wx:for="{{products}}" class="product" wx:for-item="r" data-id="{{r.id}}" bindtap="formSubmit">
+        <view wx:if="{{r.points <= 0}}" class="title">{{r.name}} | {{-r.points}} Points</view>
+        <view wx:else class="title">{{r.name}} | {{r.price}} Kuai </view>
+
+    </view>
+</view>
+
