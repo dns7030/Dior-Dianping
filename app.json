@@ -4,7 +4,8 @@
     "pages/index/detail",
     "pages/profile/index",
     "pages/products/products",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/order/history"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,7 +31,10 @@
         "pagePath": "pages/products/products",
         "text": "Products"
       },
-
+      {
+        "pagePath": "pages/order/history",
+        "text": "History"
+      },
       {
         "pagePath": "pages/profile/index",
         "text": "Me"

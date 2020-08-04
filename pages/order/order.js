@@ -34,17 +34,7 @@ Page({
   /**
    * Lifecycle function--Called when page is initially rendered
    */
-  onPayClick: function (x) {
-    let currentUser = this.data.currentUser;
-    const order = new wx.BaaS.TableObject('ordersDS');
-    order.set(newOrder).save().then(function(res) {
-    let points = res.data.points
-    currentUser.set("points", currentUser.get("points") + points).update().then(function(res) {
-    wx.reLaunch({
-      url: '/pages/user/user' // show list of orders in user dashboard
-    });
-  })
-  })
+  onPayClick: function () {
   },
 
 

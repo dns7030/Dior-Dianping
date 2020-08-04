@@ -12,15 +12,26 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
+  onShow: function (options) {
     const app = getApp();
-
     console.log('userData', app.globalData.userInfo);
     this.setData( {
       currentUser: app.globalData.userInfo,
-      points: app.globalData.userInfo.get('points')
     })
-  },
+
+  //   wx.BaaS.auth.getCurrentUser().then(user => {
+  //     // user 为 currentUser 对象
+  //     const app = getApp();
+
+  //     console.log(user)
+  //     app.globalData.userInfo = user;
+
+  //     this.setData({
+  //       currentUser: app.globalData.userInfo,
+  //     })
+
+  // })
+},
   userInfoHandler(data) {
     const app = getApp();
     wx.BaaS.auth.loginWithWechat(data).then(user => {
@@ -47,13 +58,6 @@ Page({
    * Lifecycle function--Called when page is initially rendered
    */
   onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
 
   },
 

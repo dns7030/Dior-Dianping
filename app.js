@@ -7,12 +7,10 @@ App({
 
     let clientID = '29578368652a91f88d80';  
     wx.BaaS.init(clientID);
-
-    
-
+ 
     wx.BaaS.auth.loginWithWechat().then(user => {
-      this.globalData.userInfo = user;
-      console.log('logged in from app.js', user);
+      this.globalData.userInfo = user.toJSON();
+      console.log('logged in from app.js', user.toJSON());
     }, err => {
       console.log('fail login');
     })

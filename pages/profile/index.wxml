@@ -10,7 +10,7 @@
   </view>
 </view>
 <view>
-<view> Points: {{points}}
+<view> Points: {{currentUser.points}}
 </view>
 </view>
 

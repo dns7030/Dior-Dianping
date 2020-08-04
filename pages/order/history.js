@@ -1,3 +1,4 @@
+// pages/order/history.js
 // pages/products/products.js
 Page({
 
@@ -5,7 +6,7 @@ Page({
    * Page initial data
    */
   data: {
-    products: [], 
+    orders: [], 
     product: [],
     currentUser: {}
   },
@@ -14,10 +15,10 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-      const product = new wx.BaaS.TableObject('productsDS');
+      const product = new wx.BaaS.TableObject('ordersDS');
       product.find().then((res) => {
         this.setData({
-          products: res.data.objects,
+          orders: res.data.objects,
         })
       })
     },

@@ -1,0 +1,35 @@
+/* pages/order/history.wxss */
+/* pages/products/products.wxss */
+.card {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  height: 100%;
+  padding: 10px;
+  display: row;}
+
+  /* pages/index/index.wxss */
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1rpx solid black;
+  width: 100%;
+  margin: 20rpx;
+  height: 150rpx;
+}
+
+.product .title {
+  font-size: 36rpx;
+  font-weight: bold;
+}
